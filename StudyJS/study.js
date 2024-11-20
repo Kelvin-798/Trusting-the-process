@@ -204,14 +204,88 @@ console.log(fullName.length);
 //logical operators OR|| and AND $$ 
 // const password = 'Password@'
 
-function fibonacci(n) {
-    // write your code below
-    let arr = [0,1]
-    for( i=2; i<=(n); i++){
-        arr[i] = arr[i-1] + arr[i-2]
-    }
-    console.log(arr[n])
-    console.log('adam')
+// if ( password.length >= 12 && password.includes('@')){
+//     console.log('Strong Password')
+// }else if(password.length >=8 && /\d/.test(password)){
+//     console.log('Fairly good')
+// }else {
+//     console.log('Retry')
+// }
+
+
+//logical Not(!)
+ let que = true
+
+ if(!que){
+    console.log("Are you in the que")
+ }
+ console.log(que)
+ console.log(false)
+
+
+// function fibonacci(n) {
+//     // write your code below
+//     let arr = [0,1]
+//     for( i=2; i<=(n); i++){
+//         arr[i] = arr[i-1] + arr[i-2]
+//     }
+//     console.log(arr[n])
+//     console.log('adam')
+// }
+// fibonacci(6);
+// [0,1,1,2,3,5]
+
+console.log(!true);   // Output: false
+console.log(!false);  // Output: true
+
+let x = 10;
+console.log(!(x > 5)); // Output: false (because x > 5 is true, so !(x > 5) is false)
+
+let userLogin = false
+if (!userLogin){
+    console.log('You can login now')
 }
-fibonacci(6);
-[0,1,1,2,3,5]
+
+let isEmpty = true;
+if (!isEmpty) {
+  console.log("The container is not empty."); // This will not execute
+}
+//break and continue
+
+let a = 5
+let b = "5"
+let c = 5
+     
+const comp1 = a==b
+const comp2 = a != c
+const comp3 = a == c
+const comp4 = a === c
+console.log(comp1)
+console.log(comp2)
+// console.log(comp3)
+// console.log(comp4)
+const wind = parseInt(4)
+let windStatus = "unset"
+// Write your code below
+if (wind < 8){
+    windStatus = console.log("Calm")
+}else if (wind >=8 && wind <= 31){
+    windStatus = console.log("Breeze")
+}else if(wind >=32 && wind <= 63){
+    windStatus = console.log("Gale")
+}else{
+    windStatus = console.log("Storm")
+}
+
+console.log("1" === 1)
+
+
+let n1 = 4
+let n2 = 2.4
+let n3 = parseFloat(n1 + n2)
+console.log(n3)
+
+const ages = 24.5
+let myAge = ages
+myAge = parseFloat(myAge)
+console.log(`${120 - myAge} years till 120 `)
