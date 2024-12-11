@@ -280,12 +280,47 @@ if (wind < 8){
 console.log("1" === 1)
 
 
-let n1 = 4
-let n2 = 2.4
-let n3 = parseFloat(n1 + n2)
-console.log(n3)
+// let n1 = 4
+// let n2 = 2.4
+// let n3 = parseFloat(n1 + n2)
+// console.log(n3)
 
-const ages = 24.5
-let myAge = ages
-myAge = parseFloat(myAge)
-console.log(`${120 - myAge} years till 120 `)
+// const ages = 24.5
+// let myAge = ages
+// myAge = parseFloat(myAge)
+// console.log(`${120 - myAge} years till 120 `)
+
+
+const scoress = [50,20,0,70,75,80,90,100];
+let sumNubers = 0;
+for(let i = 1; i <=100; i++){
+    
+}
+let number = 20;
+let powerOfTwo = 1;
+while (powerOfTwo <= number) {
+     powerOfTwo *= 2;
+}
+console.log(powerOfTwo);  // Output: 32
+
+
+// let powerofNumber = 1;
+
+// while (powerofNumber){
+//     powerofNumber *=2;
+// }
+// console.log(powerofNumber)
+function findFirstNumberLessThan3_5(input) {
+     let currentNumber = input;
+    
+      while (currentNumber >= 3.5) {
+        currentNumber /= 2;
+      }
+    
+      return currentNumber;
+    }
+    
+    // Example usage
+    let inputNumber = 15;
+    let result = findFirstNumberLessThan3_5(inputNumber);
+    console.log(result); // Output: 3.125
